@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.Menu_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E8E2E2"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/fragment_menu_searchView"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/searchbarround"
+                    android:paddingLeft="10dp"
+                    app:queryHint="Search Menus...." />
+
+            </LinearLayout>
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/refresh_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fragment_menu_listview"/>
+
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+        </LinearLayout>
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:id="@+id/menuFragmentFloatingMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="15dp"
+            app:fab_addButtonColorPressed="@color/pink_pressed"
+            app:fab_addButtonColorNormal="@color/pink"
+            app:fab_addButtonPlusIconColor="@android:color/white"
+            app:fab_labelStyle="@style/custom_Fab">
+
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_menuFragmentAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorPressed="@color/colorgrey"
+                app:fab_colorNormal="@color/colorgrey"
+                app:fab_size="mini"
+                app:fab_icon="@drawable/ic_baseline_add_24"
+                app:fab_title="Add Menu"/>
+
+
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+    </RelativeLayout>
+
+</FrameLayout>

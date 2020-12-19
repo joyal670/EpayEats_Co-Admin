@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/item_approvel_selling_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Selling Price"/>
+
+    <EditText
+        android:id="@+id/item_approvel_offer_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Offer Price"/>
+
+    <Spinner
+        android:id="@+id/item_approvel_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/item_menu_gstno"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:hint="GST Percentage"
+        android:layout_height="wrap_content"/>
+
+
+    <Button
+        android:id="@+id/item_calculate_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Calculate GST"
+        android:background="@color/colorNewRed"
+        android:textColor="@color/colorWhite"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="4dp"
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:hint="Total offer price including GST"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:id="@+id/item_final_offer_price"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:textColor="@color/colorBlack"/>
+
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/item_approvel_save_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorNewBlue"
+        android:textColor="@color/colorWhite"
+        android:text="Save"/>
+
+</LinearLayout>

@@ -1,0 +1,196 @@
+{
+  "project_info": {
+    "project_number": "958339710499",
+    "firebase_url": "https://epayeats-66b1a.firebaseio.com",
+    "project_id": "epayeats-66b1a",
+    "storage_bucket": "epayeats-66b1a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:958339710499:android:d898fee8207068a8f27b96",
+        "android_client_info": {
+          "package_name": "com.epayeats.epayeatsadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "958339710499-rlm3ocf3hbhq1aldh353d7ujafvo9hqu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.epayeats.epayeatsadmin",
+            "certificate_hash": "e483e38eb91bd6a76079ed9a7616578b62ccf996"
+          }
+        },
+        {
+          "client_id": "958339710499-89etm478tv86a2pqd0rldc0e2dj8msic.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsnPIUfL1cFOAMSC_rFE0QmSdyY0hfu2Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "958339710499-89etm478tv86a2pqd0rldc0e2dj8msic.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:958339710499:android:d7f161225828cf3cf27b96",
+        "android_client_info": {
+          "package_name": "com.epayeats.epayeatsco_admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "958339710499-ren84fbfqtdh5p29ktp29d8nd39oolt9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.epayeats.epayeatsco_admin",
+            "certificate_hash": "e483e38eb91bd6a76079ed9a7616578b62ccf996"
+          }
+        },
+        {
+          "client_id": "958339710499-89etm478tv86a2pqd0rldc0e2dj8msic.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsnPIUfL1cFOAMSC_rFE0QmSdyY0hfu2Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "958339710499-89etm478tv86a2pqd0rldc0e2dj8msic.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:958339710499:android:356ee811f9151a9df27b96",
+        "android_client_info": {
+          "package_name": "com.epayeats.epayeatsdeliverypartner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "958339710499-q568mnagb84mf03fr07drgnl8b9pdret.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.epayeats.epayeatsdeliverypartner",
+            "certificate_hash": "e483e38eb91bd6a76079ed9a7616578b62ccf996"
+          }
+        },
+        {
+          "client_id": "958339710499-89etm478tv86a2pqd0rldc0e2dj8msic.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsnPIUfL1cFOAMSC_rFE0QmSdyY0hfu2Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "958339710499-89etm478tv86a2pqd0rldc0e2dj8msic.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:958339710499:android:697b9645f54cfc15f27b96",
+        "android_client_info": {
+          "package_name": "com.epayeats.epayeatsrestaurant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "958339710499-8ceph2lis01ai7q0kf8kngqgupdrdjqh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.epayeats.epayeatsrestaurant",
+            "certificate_hash": "e483e38eb91bd6a76079ed9a7616578b62ccf996"
+          }
+        },
+        {
+          "client_id": "958339710499-89etm478tv86a2pqd0rldc0e2dj8msic.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsnPIUfL1cFOAMSC_rFE0QmSdyY0hfu2Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "958339710499-89etm478tv86a2pqd0rldc0e2dj8msic.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:958339710499:android:a59aa0aff0510472f27b96",
+        "android_client_info": {
+          "package_name": "com.epayeats.epayeatsuser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "958339710499-io50853csrs4evn35vpov6621rg5vqp2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.epayeats.epayeatsuser",
+            "certificate_hash": "e483e38eb91bd6a76079ed9a7616578b62ccf996"
+          }
+        },
+        {
+          "client_id": "958339710499-89etm478tv86a2pqd0rldc0e2dj8msic.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsnPIUfL1cFOAMSC_rFE0QmSdyY0hfu2Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "958339710499-89etm478tv86a2pqd0rldc0e2dj8msic.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

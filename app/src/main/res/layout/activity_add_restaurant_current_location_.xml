@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AddRestaurantCurrentLocation_Activity">
+
+  <TextView
+      android:layout_marginTop="8dp"
+      android:text="Fetching current location, please wait"
+      android:textStyle="bold"
+      android:textAllCaps="true"
+      android:id="@+id/text_location"
+      android:layout_gravity="center"
+      android:gravity="center"
+      android:textColor="@color/colorBlack"
+      android:textSize="18sp"
+      android:visibility="invisible"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+
+  <Button
+      android:id="@+id/button_location"
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      android:background="@drawable/buttonroundred"
+      android:textColor="@color/colorWhite"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      android:text="Get Location"/>
+
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/location_layout"
+      android:visibility="gone"
+      android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          app:cardCornerRadius="1dp"
+          app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Restaurant Details"
+              android:textColor="@color/colorBlack"
+              android:textStyle="bold"
+              android:textAllCaps="true"
+              android:layout_marginTop="4dp"
+              android:layout_marginLeft="4dp"
+              android:textSize="22sp"/>
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/textField"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:layout_marginTop="5dp"
+              android:layout_marginRight="10dp"
+              android:hint="Name"
+              app:boxStrokeColor="@color/colorBlack"
+              app:endIconMode="clear_text">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/add_res_name_crnt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+          </com.google.android.material.textfield.TextInputLayout>
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:layout_marginTop="10dp"
+              android:layout_marginRight="10dp"
+              android:hint="Owner Name"
+              app:boxStrokeColor="@color/colorBlack">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/add_res_user_name_crnt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+          </com.google.android.material.textfield.TextInputLayout>
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/textField1"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:layout_marginTop="10dp"
+              android:layout_marginRight="10dp"
+              android:hint="Phone Number"
+              app:boxStrokeColor="@color/colorBlack">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/add_res_phoneno_crnt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="10"
+                android:inputType="number" />
+          </com.google.android.material.textfield.TextInputLayout>
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:layout_marginTop="10dp"
+              android:layout_marginRight="10dp"
+              android:hint="Shop Licence Number"
+              app:boxStrokeColor="@color/colorBlack">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/add_res_licenceno_crnt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+          </com.google.android.material.textfield.TextInputLayout>
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:layout_marginTop="10dp"
+              android:layout_marginRight="10dp"
+              android:hint="Gst Number"
+              app:boxStrokeColor="@color/colorBlack">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/add_res_gstno_crnt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+          </com.google.android.material.textfield.TextInputLayout>
+
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:orientation="horizontal"
+              android:weightSum="10">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="5"
+                android:hint="Opening Time"
+                app:boxStrokeColor="@color/colorBlack">
+
+
+              <com.google.android.material.textfield.TextInputEditText
+                  android:id="@+id/add_res_opentime_crnt"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="5"
+                android:hint="Closing Time"
+                app:boxStrokeColor="@color/colorBlack">
+
+              <com.google.android.material.textfield.TextInputEditText
+                  android:id="@+id/add_res_closetime_crnt"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+          </LinearLayout>
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:layout_marginTop="10dp"
+              android:layout_marginRight="10dp"
+              android:hint="Email"
+              app:boxStrokeColor="@color/colorBlack">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/add_res_email_crnt"
+                android:layout_width="match_parent"
+                android:inputType="textEmailAddress"
+                android:layout_height="wrap_content" />
+          </com.google.android.material.textfield.TextInputLayout>
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:layout_marginTop="10dp"
+              android:layout_marginRight="10dp"
+              android:hint="Password"
+              app:boxStrokeColor="@color/colorBlack">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/add_res_password_crnt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+          </com.google.android.material.textfield.TextInputLayout>
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:layout_marginTop="10dp"
+              android:layout_marginRight="10dp"
+              android:hint="Confirm Password"
+              app:boxStrokeColor="@color/colorBlack">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/add_res_conpassword_crnt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+          </com.google.android.material.textfield.TextInputLayout>
+
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginLeft="10dp"
+              android:layout_marginTop="10dp"
+              android:text="Block/Unblock"
+              android:textColor="@color/colorBlack"/>
+
+
+          <Spinner
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="Enter Status"
+              android:id="@+id/add_res_block_spinner_crnt"/>
+
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="on or off"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5">
+
+              <androidx.appcompat.widget.SwitchCompat
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/add_res_closed_crnt"/>
+            </LinearLayout>
+
+
+          </LinearLayout>
+
+
+
+
+          <ImageView
+              android:id="@+id/add_res_photo_crnt"
+              android:layout_width="180dp"
+              android:layout_height="180dp"
+              android:layout_gravity="center"
+              android:layout_marginTop="5dp"
+              android:src="@drawable/ic_baseline_add_photo_alternate_24"/>
+
+
+          <Button
+              android:id="@+id/restaurant_map_savebtn_crnt"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:layout_marginLeft="20dp"
+              android:layout_marginTop="10dp"
+              android:layout_marginRight="15dp"
+              android:layout_marginBottom="10dp"
+              android:background="@drawable/buttonround"
+              android:text="ADD"
+              android:textColor="@color/colorBlack"
+              android:textSize="20sp"
+              android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+      </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+
+  </LinearLayout>
+
+  </LinearLayout>
+
+
+
+
+
+
+

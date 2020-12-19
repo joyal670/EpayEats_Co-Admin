@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.epayeats.epayeatsco_admin">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appicon2"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/appicon2"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EpayEats"
+        android:hardwareAccelerated="true"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:icon">
+
+        <activity android:name=".Activity.ForgotPassword_Activity"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".Activity.PendingOrders_Activity"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".Activity.resaurantReportDetails_Activity"
+            android:screenOrientation="locked"
+            android:theme="@style/AppThemeMaterial" />
+
+        <activity
+            android:name=".Activity.deliveryBoyReportdetails_Activity"
+            android:screenOrientation="locked"
+            android:theme="@style/AppThemeMaterial" />
+
+        <activity
+            android:name=".Activity.RestaurantReport_Activity"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Activity.DeliveryboyReport_Activity"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Activity.MenuPendingApprovel_Activity"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Activity.AddRestaurantCurrentLocation_Activity"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".PlacesApi.AutoCompleteActivity"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Activity.ActiveDeliveryBoys_Activity"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Activity.DeliveryBoySelection_Activity"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Activity.AddDeliveryBoy_Activity"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Activity.AddMenu_Activity"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Activity.AddRestaurant_MapsActivity"
+            android:label="@string/title_activity_add_restaurant__maps" />
+        <activity
+            android:name=".Activity.Login_Activity"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activity.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.MainActivity"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <service
+            android:name=".Service.MyService"
+            android:enabled="true" />
+    </application>
+
+</manifest>

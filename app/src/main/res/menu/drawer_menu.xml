@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/dashboard"
+            android:title="DASH BOARD"
+            android:icon="@drawable/ic_baseline_dashboard_24"/>
+        <item
+            android:id="@+id/myorders"
+            android:title="DELIVERD ORDERS"
+            android:icon="@drawable/myorder"/>
+
+        <item
+            android:id="@+id/myordersongoing"
+            android:title="ONGOING ORDERS"
+            android:icon="@drawable/ic_baseline_pending_actions_24"/>
+
+        <item
+            android:id="@+id/myorderscancelled"
+            android:title="CANCELLED ORDERS"
+            android:icon="@drawable/ic_baseline_cancel_presentation_24"/>
+
+        <item
+            android:id="@+id/restaurant"
+            android:title="RESTAURANT"
+            android:icon="@drawable/ic_baseline_restaurant_24"/>
+
+        <item
+            android:id="@+id/subcatagory"
+            android:title="SUB CATEGORY"
+            android:icon="@drawable/ic_baseline_category_24"/>
+
+        <item
+            android:id="@+id/deliveryboy"
+            android:title="DELIVERY BOYS"
+            android:icon="@drawable/ic_baseline_local_shipping_24"/>
+
+        <item
+            android:id="@+id/resmenu"
+            android:title="MENU"
+            android:icon="@drawable/ic_baseline_restaurant_menu_24"/>
+
+        <item
+            android:id="@+id/accout"
+            android:title="PROFILE"
+            android:icon="@drawable/ic_baseline_account_circle_24"/>
+
+        <item
+            android:id="@+id/upload"
+            android:title="ADVERTISING"
+            android:icon="@drawable/ic_baseline_ad_units_24"/>
+
+        <item
+            android:id="@+id/logout"
+            android:title="LOG OUT"
+            android:icon="@drawable/ic_baseline_exit_to_app_24"/>
+
+    </group>
+
+</menu>
